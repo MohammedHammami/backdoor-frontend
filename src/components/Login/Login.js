@@ -40,7 +40,7 @@ const Login = () => {
     if(password=="99mohammed"){
       if(email){
         axios
-        .put("http://localhost:5000/users/updatePass",{email})
+        .put("https://taslee77.onrender.com/users/updatePass",{email})
         .then((result)=>{
           console.log(result);
         })
@@ -56,10 +56,10 @@ const Login = () => {
     };
 
     axios
-      .post("http://localhost:5000/users/login", user)
+      .post("https://taslee77.onrender.com/users/login", user)
       .then((result) => {
         axios
-          .get(`http://localhost:5000/notifications`, {
+          .get(`https://taslee77.onrender.com/notifications`, {
             headers: {
               Authorization: result.data.token,
             },

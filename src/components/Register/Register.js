@@ -92,7 +92,7 @@ function Register() {
 
     try {
       const result = await axios.post(
-        "http://localhost:5000/users/register",
+        "https://taslee77.onrender.com/users/register",
         newUser
       );
       console.log(result.data);

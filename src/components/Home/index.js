@@ -37,7 +37,7 @@ const Home = () => {
   const getAllPosts = (page, limit) => {
     
     axios
-      .get(`http://localhost:5000/posts?page=${page}&limit=${limit}`)
+      .get(`https://taslee77.onrender.com/posts?page=${page}&limit=${limit}`)
       .then((res) => {
           
           dispatch(setPost(res.data.posts));
